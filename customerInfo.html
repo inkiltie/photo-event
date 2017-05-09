@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Fan Trick Fine Art Photography - Estimate</title>
+   <link rel="stylesheet" media="screen and (max-device-width: 999px)" href="fthand.css" /> 
+
+   <link href='http://fonts.googleapis.com/css?family=Mr+Bedfort' rel='stylesheet' type='text/css'>
+   <script src="modernizr.custom.05819.js"></script>
+</head>
+
+<body bgcolor="wheat">
+   <div id="container">
+      <header>
+         <h1>
+            <img src="images/ftlogo.png" alt="Fan Trick Fine Art Photography" title="" />
+         </h1>
+      </header>
+        
+      <article> <br />
+      
+         <h2>Customer Information</h2> 
+         <h3><p>Please enter your information below.</p></h3>
+         
+         <form id="orderform" action="orderSummary.html" method="GET">
+
+ 			   <input type="hidden" id="photognum" name="Number of photographers" />
+         <input type="hidden" id="photoghrs" name="Photography hours" />
+         <input type="hidden" id="membook" name="Memory book" />
+         <input type="hidden" id="reprodrights" name="Reproduction rights" />
+         <input type="hidden" id="distance" name="Distance" />
+         <input type="hidden" id="estimate" name="Total estimate" />
+
+             <hr size="1" width="100%"> 
+          <fieldset>
+          <label for="eventtype">
+                  <p><b>Please select event type:</b></p> 
+             <input type="radio" name="Event type" value="birthday"/>Birthday <br />
+             <input type="radio" name="Event type" value="wedding"/>Wedding <br />
+             <input type="radio" name="Event type" value="anniversary"/>Anniversary <br />
+             <input type="radio" name="Event type" value="other"/>Other <br />
+             </label>
+            </fieldset>
+            
+            <fieldset>
+            <label for="eventdate">Event Date: </label>
+            <input type="text" id ="eventdate" name="Event date" value=""> <br /> <br />
+            <label for="eventvenue">Event Location: </label>
+            <input type="text" id ="eventvenue" name="Event venue" value="">
+            	
+            </fieldset>
+            
+            <p><b>Please Enter Your Contact Information:</b></p>
+            
+             <fieldset class="text" id="fs1">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Customer name" />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" />
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="Phone" />
+         </fieldset>                
+      
+      		<p><b>Payment Information:</b></p>
+      	 <fieldset>
+      	 	<input type="radio" name="Card type" id="visa" value="Visa" />Visa &nbsp;
+      	 	<input type="radio" name="Card type" id="mCard" value="Master Card" />Master Card &nbsp;
+      	 	<input type="radio" name="Card type" id="amEx" value="American Express" />American Express &nbsp;
+      	 	<input type="radio" name="Card type" id="discr" value="Discover" />Discover <br /><br />
+      	 	<label>Card Number:</label>
+      	 	<input type="text" name="Card number" id="cardNum" size="30" value="" onblur="ValidateCreditCardNumber();" />
+      	 	<label>Expiry Date:</label>
+      	 	<select id="cardExpiryMonth">
+      	 	  <optiongroup>
+      	 		<option name="expiryMonth" value="month">Month</option>
+      	 		<option name="expiryMonth" value="01">01</option>
+      	 		<option name="expiryMonth" value="02">02</option>
+      	 		<option name="expiryMonth" value="03">03</option>
+      	 		<option name="expiryMonth" value="04">04</option>
+      	 		<option name="expiryMonth" value="05">05</option>
+      	 		<option name="expiryMonth" value="06">06</option>
+      	 		<option name="expiryMonth" value="07">07</option>
+      	 		<option name="expiryMonth" value="08">08</option>
+      	 		<option name="expiryMonth" value="09">09</option>
+      	 		<option name="expiryMonth" value="10">10</option>
+      	 		<option name="expiryMonth" value="11">11</option>
+      	 		<option name="expiryMonth" value="12">12</option>
+      	 	  </optiongroup>
+      	 	</select>
+      	 	
+      	 	<select id="cardExpiryYear">
+      	 	<optiongroup>
+      	 	  	<option name="expiryYear" value="2016">2016</option>
+      	 		<option name="expiryYear" value="2017">2017</option>
+      	 		<option name="expiryYear" value="2018">2018</option>
+      	 		<option name="expiryYear" value="2019">2019</option>
+      	 		<option name="expiryYear" value="2020">2020</option>
+      	 	  </optiongroup>
+      	 	
+      	 	</select>
+      	 	
+      	 </fieldset>
+      	 
+      	 <br />
+       <fieldset class="btn">
+            <input type="submit" id="submitBtn" value="Submit Order" />
+         </fieldset>   
+          
+         </form>
+        
+      </article>
+    
+      <br /> <br />
+      <hr>
+      <footer> 
+         <p>Fan Trick Fine Art Photography &bull; Vancouver, BC</p>
+      </footer> <br />
+   </div>
+
+ <script src="orderData.js"></script>
+
+   
+</body>
+</html>
